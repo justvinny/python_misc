@@ -7,12 +7,10 @@ class Product:
 		self.product_quantity = float(product_quantity)
 
 	def to_dictionary(self):
-		product_dictionary = {"Category":self.product_category, 
+		return {"Category":self.product_category, 
 				"Title":self.product_title,
 				"Price":self.product_price,
 				"Quantity":self.product_quantity}
-
-		return product_dictionary;
 
 
 class Shop:
